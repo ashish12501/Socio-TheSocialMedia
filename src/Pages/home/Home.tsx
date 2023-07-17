@@ -4,6 +4,7 @@ import { getDocs, collection } from 'firebase/firestore'
 import { useEffect, useState } from 'react';
 import { async } from '@firebase/util';
 import { Post } from './post'
+import { Homeprofile } from './homeprofile'
 
 export interface Posts {
     id: string,
@@ -32,8 +33,14 @@ export const Home = () => {
         getPosts();
     }, [])
     return (
-        <div>
-            {postList?.map((post) => <Post post={post} />)}
+        <div className="home">
+            <div className="homeprofile">
+                <Homeprofile />
+            </div>
+            <div className='homeposts'>
+                {postList?.map((post) => <Post post={post} />)}
+            </div>
         </div>
+
     )
 }
