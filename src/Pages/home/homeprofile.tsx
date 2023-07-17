@@ -10,7 +10,7 @@ export const Homeprofile = () => {
 
     }
     return (
-        <div>
+        <div className='ProfileHome'>
             {user && (
                 <div className="profilehome">
                     <img src={user?.photoURL || ""}></img>
