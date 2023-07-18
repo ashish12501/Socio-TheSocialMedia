@@ -92,8 +92,6 @@ body {
   justify-content: center;
   background-color: #1B2730;
   border-radius: 15px;
-  width: 40vw;
-  height: 60vh;
   color: #DBEAEE;
   /* margin-top: 15vh; */
   padding: 20px;
@@ -102,8 +100,6 @@ body {
 .tittle {
   border: none;
   border-bottom: 2px solid #DBEAEE;
-  padding: 9px;
-  width: 30vw;
   color: #DBEAEE;
   background-color: #28343E;
 }
@@ -111,8 +107,6 @@ body {
 .description {
   border: none;
   border-bottom: 2px solid #DBEAEE;
-  padding: 9px;
-  width: 30vw;
   background-color: #28343E;
   height: 20vh;
   color: #DBEAEE;
@@ -152,6 +146,36 @@ body {
     justify-content: center;
     flex-direction: row;
   }
+
+  .homeprofile {
+    margin-left: 60px;
+
+  }
+
+  .login {
+    width: 40%;
+    height: 40%;
+  }
+
+  .form {
+    width: 40vw;
+    height: 60vh;
+  }
+
+  .tittle {
+    padding: 9px;
+    width: 30vw;
+  }
+
+  .description {
+    padding: 9px;
+    width: 30vw;
+  }
+
+  .submitButton {
+    width: 32vw;
+    height: 8vh;
+  }
 }
 
 /* Media query for mobile-size screen (for example, below 768px) */
@@ -162,6 +186,21 @@ body {
     flex-direction: column;
   }
 
+  .submitButton {
+    width: 62vw;
+    height: 8vh;
+  }
+
+  .description {
+    padding: 9px;
+    width: 60vw;
+  }
+
+  .tittle {
+    padding: 9px;
+    width: 60vw;
+  }
+
   .user {
     display: none;
   }
@@ -169,12 +208,22 @@ body {
   .logo {
     margin-left: 30px;
   }
+
+  .login {
+    width: 80%;
+    height: 30%;
+  }
+
+  .form {
+    width: 75vw;
+    height: 60vh;
+  }
 }
 
 .homeprofile {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start
 }
 
 .profilehome {
@@ -297,8 +346,6 @@ body {
   color: #DBEAEE;
   border-radius: 20px;
   background-color: #28343E;
-  width: 35vw;
-  height: 30vh;
   padding: 20px 0;
 }
 
