@@ -86,11 +86,9 @@ export const Post = (props: Props) => {
             </div>
             <div className='postcontent'>
                 <p className="posttitle"> {post.tittle}</p>
-
                 <p className="postdescription"> {post.description} </p>
+                <img className='postImage' src={post.imageLink}></img>
             </div>
-
-
 
             <div className="footer">
 

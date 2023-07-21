@@ -12,6 +12,7 @@ export interface Posts {
     tittle: string,
     description: string,
     username: string,
+    imageLink?: string,
 }
 
 export const Home = () => {
