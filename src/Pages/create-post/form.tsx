@@ -72,8 +72,9 @@ export const CreateForm = () => {
                 <p style={{ color: "red" }} >{errors.description?.message}</p>
                 <input style={{ display: "none" }} className='imageUpload' id='file' type="file" onChange={(event) => (setPostImage(event.target.files && event.target.files[0]))} />
                 <label className='postlabel' htmlFor="file">
-                    <img src={uploadimg} alt="" />
-                    <span>Add an image</span>
+
+                    {postImage == null ? <img src={uploadimg} alt="" /> : ""}
+                    <span>{postImage ? "Image Selected" : "Choose Image"}</span>
                 </label>
                 <input className='submitButton' type="submit">
                 </input>
