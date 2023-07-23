@@ -422,8 +422,10 @@ label img {
     margin: 2px 0;
   }
 
-  .posttext {
-    margin-left: 20px;
+  .postdescription {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 7px;
   }
 
   .button {
@@ -431,6 +433,12 @@ label img {
   }
 
   .postImage {
+    margin-top: 0;
     max-width: 100%;
+  }
+
+  .username {
+    margin-left: 15px;
+    margin-bottom: 0;
   }
 }

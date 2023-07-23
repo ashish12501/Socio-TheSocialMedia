@@ -15,7 +15,7 @@ import uploadimg from './upload.png'
 
 
 interface CreateFormData {
-    tittle: string;
+    // tittle: string;
     description: string;
     imageLink?: string;
     userImage?: string;
@@ -26,7 +26,7 @@ export const CreateForm = () => {
     const navigate = useNavigate();
     const [postImage, setPostImage] = useState<File | null>(null);
     const schema = yup.object().shape({
-        tittle: yup.string().required("You must have a tittle to post"),
+        // tittle: yup.string().required("You must have a tittle to post"),
         description: yup.string().required("You must have a description to post"),
         // imageLink: yup.string().required()
     })
@@ -66,9 +66,9 @@ export const CreateForm = () => {
         <div className='formBody'>
             <form className='form' onSubmit={handleSubmit(onCreatePost)}>
                 <h2>Create Post</h2>
-                <input className='tittle' placeholder='Title...' {...register("tittle")} />
-                <p style={{ color: "red" }}>{errors.tittle?.message}</p>
-                <textarea className='description' placeholder='Description...' {...register("description")} />
+                {/* <input className='tittle' placeholder='Title...' {...register("tittle")} />
+                <p style={{ color: "red" }}>{errors.tittle?.message}</p> */}
+                <textarea className='description' placeholder='Caption...' {...register("description")} />
                 <p style={{ color: "red" }} >{errors.description?.message}</p>
                 <input style={{ display: "none" }} className='imageUpload' id='file' type="file" onChange={(event) => (setPostImage(event.target.files && event.target.files[0]))} />
                 <label className='postlabel' htmlFor="file">

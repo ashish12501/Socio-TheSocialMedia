@@ -81,7 +81,7 @@ export const Post = (props: Props) => {
 
     return (
         <div className='post'>
-            <div className="username posttext">
+            <div className="username">
                 <img className='postUserImage' src={post.userImage} />
                 <p> {post.username} </p>
             </div>
