@@ -326,7 +326,7 @@ label img {
   justify-content: center;
   align-items: center;
   background-color: #1B2730;
-  height: 12vh;
+  height: 10vh;
   border-radius: 10px;
   /* width: 80%; */
 }
@@ -341,6 +341,7 @@ label img {
 }
 
 .postBarCaption {
+  background-color: #28343E;
   border: 1px solid #28343E;
   border-radius: 20px;
   width: 75%;
@@ -503,10 +504,16 @@ label img {
 
   .formBar {
     width: 100vw;
+    border-radius: 0;
+    height: 8vh;
   }
 
   .postBarCaption {
     /* width: 70vw; */
-    margin: 0 3vw;
+    margin: 0 1vw 0 3vw;
+  }
+
+  .postBarImg {
+    margin-left: 5px;
   }
 }
