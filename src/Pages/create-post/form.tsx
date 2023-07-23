@@ -14,8 +14,6 @@ import { ref, uploadBytes, getDownloadURL } from 'firebase/storage'
 import uploadimg from './upload.png'
 
 
-
-
 interface CreateFormData {
     tittle: string;
     description: string;
