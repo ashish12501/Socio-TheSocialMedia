@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { async } from '@firebase/util';
 import { Post } from './post'
 import { Homeprofile } from './homeprofile'
+import { HomePost } from './postBar';
 
 export interface Posts {
     id: string,
@@ -36,11 +37,17 @@ export const Home = () => {
     }, [])
     return (
         <div className="home">
+
             <div className="homeprofile">
                 <Homeprofile />
             </div>
-            <div className='homeposts'>
-                {postList?.map((post) => <Post post={post} />)}
+            <div className="middlebox">
+                <div className='homePostBar'>
+                    <HomePost />
+                </div>
+                <div className='homeposts'>
+                    {postList?.map((post) => <Post post={post} />)}
+                </div>
             </div>
         </div>
 
