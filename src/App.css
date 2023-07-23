@@ -208,9 +208,20 @@ label img {
 }
 
 .username {
+  display: flex;
+  flex-direction: row;
   text-align: left;
   font-weight: bold;
   font-size: medium;
+  margin-top: 15px;
+}
+
+.username p {
+  margin-left: 10px;
+}
+
+.postUserImage {
+  height: 40px;
 }
 
 .postcontent {

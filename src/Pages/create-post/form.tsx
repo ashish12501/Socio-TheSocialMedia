@@ -18,6 +18,7 @@ interface CreateFormData {
     tittle: string;
     description: string;
     imageLink?: string;
+    userImage?: string;
 }
 
 export const CreateForm = () => {
@@ -52,7 +53,8 @@ export const CreateForm = () => {
                         ...data,
                         username: user?.displayName,
                         userId: user?.uid,
-                        imageLink: downloadURL
+                        imageLink: downloadURL,
+                        userImage: user?.photoURL
                     })
                     navigate("/")
                 })

@@ -82,10 +82,11 @@ export const Post = (props: Props) => {
     return (
         <div className='post'>
             <div className="username posttext">
-                <p> @{post.username} </p>
+                <img className='postUserImage' src={post.userImage} />
+                <p> {post.username} </p>
             </div>
             <div className='postcontent'>
-                <p className="posttitle posttext"> {post.tittle}</p>
+                {/* <p className="posttitle posttext"> {post.tittle}</p> */}
                 <p className="postdescription posttext"> {post.description} </p>
                 <img className='postImage' src={post.imageLink}></img>
             </div>

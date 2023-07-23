@@ -13,6 +13,7 @@ export interface Posts {
     description: string,
     username: string,
     imageLink?: string,
+    userImage: string,
 }
 
 export const Home = () => {
