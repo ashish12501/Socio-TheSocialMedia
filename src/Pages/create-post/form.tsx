@@ -70,7 +70,7 @@ export const CreateForm = () => {
                 <p style={{ color: "red" }}>{errors.tittle?.message}</p> */}
                 <textarea className='description' placeholder='Caption...' {...register("description")} />
                 <p style={{ color: "red" }} >{errors.description?.message}</p>
-                <input style={{ display: "none" }} className='imageUpload' id='file' type="file" onChange={(event) => (setPostImage(event.target.files && event.target.files[0]))} />
+                <input style={{ display: "none" }} className='imageUpload' id='file' type="file" accept="image/*" onChange={(event) => (setPostImage(event.target.files && event.target.files[0]))} />
                 <label className='postlabel' htmlFor="file">
 
                     {postImage == null ? <img src={uploadimg} alt="" /> : ""}
